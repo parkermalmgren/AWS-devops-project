@@ -1,0 +1,14 @@
+name: devops-demo
+
+services:
+  db:
+    image: postgres:12.2
+    container_name: database
+    restart: always
+    ports:
+      - "8080:8080"
+  frontend:
+    build: .
+    container_name: frontend
+    ports:
+      - "3000:3000"
