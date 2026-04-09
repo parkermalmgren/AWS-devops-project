@@ -21,7 +21,7 @@ class Note(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "parker:)"}
+    return {"imran is dumb": "6 is not accepted btw"}
 
 @app.get("/notes")
 def read_notes():
