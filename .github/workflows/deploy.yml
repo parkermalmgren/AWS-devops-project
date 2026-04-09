@@ -16,7 +16,7 @@ env: #my enviornment variables for names of each repo/service
   ECR_REPOSITORY: parkers-web-app
   ECS_REPOSITORY: parkers-web-app-service
   ECS_CLUSTER: parkers-cluster
-  ECS_TASK_DEFINITION: parkers-web-app
+  task-definition: .github/task-definition.json
   CONTAINER_NAME: parkers-web-app
 
 

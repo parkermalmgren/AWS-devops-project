@@ -1,0 +1,36 @@
+{
+    "family": "parkers-web-app",
+    "containerDefinitions": [
+        {
+            "name": "parkers-web-app",
+            "image": "471112762647.dkr.ecr.us-east-1.amazonaws.com/parkers-web-app",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "parkers-web-app-8000-tcp",
+                    "containerPort": 8000,
+                    "hostPort": 8000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "executionRoleArn": "arn:aws:iam::471112762647:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "volumes": [],
+    "placementConstraints": [],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "1024",
+    "memory": "2048",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    }
+}
