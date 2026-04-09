@@ -16,6 +16,7 @@ env: #my enviornment variables for names of each repo/service
   ECR_REPOSITORY: parkers-web-app
   ECS_REPOSITORY: parkers-web-app-service
   ECS_CLUSTER: parkers-cluster
+  ECS_SERVICE: parkers-web-app-service
   CONTAINER_NAME: parkers-web-app
 
 
