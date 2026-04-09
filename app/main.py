@@ -1,4 +1,3 @@
-import string
 
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -22,7 +21,7 @@ class Note(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"Hello": "World"}
+    return {"Hello": "Parker"}
 
 @app.get("/notes")
 def read_notes():
