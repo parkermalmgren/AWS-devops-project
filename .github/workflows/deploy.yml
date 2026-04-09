@@ -6,9 +6,10 @@ on:
   push:
     branches:
       - main
-  permissions:
-    id-token: write
-    contents: read
+
+permissions:
+  id-token: write
+  contents: read
 
 env: #my enviornment variables for names of each repo/service
   AWS_REGION: us-east-1
